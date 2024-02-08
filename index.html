@@ -1,0 +1,232 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mobilenet vs Google lens </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <center>
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <ol>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b class="btn btn-warning">Test Image - </b>
+                    <img src="bed.jpeg" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Google Lens</b> - bed
+                    <span> </span>
+                </h5>
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Mobilenet Model</b> - bed
+                    <span> </span>
+                </h5>
+                <div class="mini_reult" class="col-xs-12">
+                    <h4 class="btn btn-danger">Result - </h4>
+                    <hr>
+                    <h4 class="btn btn-success">Tie</h4>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b class="btn btn-warning">Test Image - </b>
+                    <img src="bottle.jpeg" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Google Lens</b> - bottle
+                    <span> </span>
+                </h5>
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Mobilenet Model</b> - phone
+                    <span> </span>
+                </h5>
+                <div class="mini_reult" class="col-xs-12">
+                    <h4 class="btn btn-danger">Result - </h4>
+                    <hr>
+                    <h4 class="btn btn-success">Google lens is more accurate</h4>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b class="btn btn-warning">Test Image - </b>
+                    <img src="fan.jpeg" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Google Lens</b> - stapler
+                    <span> </span>
+                </h5>
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Mobilenet Model</b> - Fan
+                    <span> </span>
+                </h5>
+                <div class="mini_reult" class="col-xs-12">
+                    <h4 class="btn btn-danger">Result - </h4>
+                    <hr>
+                    <h4 class="btn btn-success">Mobilenet is more accurate</h4>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b class="btn btn-warning">Test Image - </b>
+                    <img src="glass.jpeg" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Google Lens</b> - wire
+                    <span> </span>
+                </h5>
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Mobilenet Model</b> - mouse
+                    <span> </span>
+                </h5>
+                <div class="mini_reult" class="col-xs-12">
+                    <h4 class="btn btn-danger">Result - </h4>
+                    <hr>
+                    <h4 class="btn btn-success">Both are inaccurate</h4>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b class="btn btn-warning">Test Image - </b>
+                    <img src="phone.jpg" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Google Lens</b> - calculator
+                    <span> </span>
+                </h5>
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Mobilenet Model</b> - calculator
+                    <span> </span>
+                </h5>
+                <div class="mini_reult" class="col-xs-12">
+                    <h4 class="btn btn-danger">Result - </h4>
+                    <hr>
+                    <h4 class="btn btn-success">Both are inaccurate</h4>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b class="btn btn-warning">Test Image - </b>
+                    <img src="ring.jpeg" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Google Lens</b> - ring
+                    <span> </span>
+                </h5>
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Mobilenet Model</b> - ring
+                    <span> </span>
+                </h5>
+                <div class="mini_reult" class="col-xs-12">
+                    <h4 class="btn btn-danger">Result - </h4>
+                    <hr>
+                    <h4 class="btn btn-success">Tie</h4>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b class="btn btn-warning">Test Image - </b>
+                    <img src="pillow.jpeg" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Google Lens</b> - Printer
+                    <span> </span>
+                </h5>
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Mobilenet Model</b> - Pillow
+                    <span> </span>
+                </h5>
+                <div class="mini_reult" class="col-xs-12">
+                    <h4 class="btn btn-danger">Result - </h4>
+                    <hr>
+                    <h4 class="btn btn-success">Mobilenet is more accurate</h4>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b class="btn btn-warning">Test Image - </b>
+                    <img src="shirt.jpeg" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Google Lens</b> - shirt
+                    <span> </span>
+                </h5>
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Mobilenet Model</b> - shis\rt
+                    <span> </span>
+                </h5>
+                <div class="mini_reult" class="col-xs-12">
+                    <h4 class="btn btn-danger">Result - </h4>
+                    <hr>
+                    <h4 class="btn btn-success">Tie</h4>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b class="btn btn-warning">Test Image - </b>
+                    <img src="spoon.jpeg" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Google Lens</b> - spoon
+                    <span> </span>
+                </h5>
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Mobilenet Model</b> - spoon
+                    <span> </span>
+                </h5>
+                <div class="mini_reult" class="col-xs-12">
+                    <h4 class="btn btn-danger">Result - </h4>
+                    <hr>
+                    <h4 class="btn btn-success">Tie</h4>
+                </div>
+            </div>
+
+            <br>
+
+            
+        </ol>
+    </center>
+</body>
+</html>
